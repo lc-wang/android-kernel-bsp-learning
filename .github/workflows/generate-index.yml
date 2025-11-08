@@ -9,6 +9,8 @@ on:
 
 jobs:
   build-index:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -24,17 +26,45 @@ jobs:
       - name: Install dependencies (none required)
         run: npm ci || true
 
+      - name: Show repo tree before
+        run: |
+          echo "PWD: $(pwd)"
+          ls -la
+
       - name: Generate index.json
         run: node tools/generate_index.js
 
-      - name: Commit changes
+      - name: Show generated file (debug)
+        run: |
+          echo "assets folder exists?"; ls -la assets || true
+          echo "file content (first 200 lines):"
+          if [ -f assets/notes_index.json ]; then
+            head -n 200 assets/notes_index.json || true
+          else
+            echo "assets/notes_index.json not found"
+          fi
+
+      - name: Commit changes (handle new/untracked files)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet; then
-            echo "No changes to commit"
+
+          # Force add the generated file (in case assets/ is in .gitignore)
+          if [ -f assets/notes_index.json ]; then
+            git add -f assets/notes_index.json
+          fi
+
+          echo "GIT STATUS (porcelain):"
+          git status --porcelain
+
+          echo "--- GIT DIFF (staged) ---"
+          git diff --cached --name-only || true
+
+          # If there are staged changes, commit and push
+          if git diff --cached --quiet; then
+            echo "No staged changes to commit"
           else
-            git add assets/notes_index.json
-            git commit -m "chore: regenerate notes index"
+            echo "Committing changes..."
+            git commit -m "chore(ci): regenerate notes index"
             git push
           fi

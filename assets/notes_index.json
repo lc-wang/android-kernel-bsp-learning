@@ -1,0 +1,135 @@
+{
+  "generated_at": "2025-11-08T13:53:25.129Z",
+  "index": {
+    "notes": [
+      {
+        "subfolder": "android",
+        "files": [
+          {
+            "name": "binder-ipc.md",
+            "path": "notes/android/binder-ipc.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/binder-ipc.md"
+          },
+          {
+            "name": "boot-flow.md",
+            "path": "notes/android/boot-flow.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/boot-flow.md"
+          },
+          {
+            "name": "hidl-aidl.md",
+            "path": "notes/android/hidl-aidl.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/hidl-aidl.md"
+          },
+          {
+            "name": "system-services.md",
+            "path": "notes/android/system-services.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/system-services.md"
+          }
+        ]
+      },
+      {
+        "subfolder": "bsp",
+        "files": [
+          {
+            "name": "device-tree.md",
+            "path": "notes/bsp/device-tree.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/device-tree.md"
+          },
+          {
+            "name": "suspend-resume.md",
+            "path": "notes/bsp/suspend-resume.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/suspend-resume.md"
+          },
+          {
+            "name": "uboot.md",
+            "path": "notes/bsp/uboot.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/uboot.md"
+          }
+        ]
+      },
+      {
+        "subfolder": "kernel",
+        "files": [
+          {
+            "name": "driver-basic.md",
+            "path": "notes/kernel/driver-basic.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/driver-basic.md"
+          },
+          {
+            "name": "interrupts.md",
+            "path": "notes/kernel/interrupts.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/interrupts.md"
+          },
+          {
+            "name": "power-management.md",
+            "path": "notes/kernel/power-management.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/power-management.md"
+          },
+          {
+            "name": "synchronization.md",
+            "path": "notes/kernel/synchronization.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/synchronization.md"
+          },
+          {
+            "name": "wifi-stack.md",
+            "path": "notes/kernel/wifi-stack.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/wifi-stack.md"
+          }
+        ]
+      }
+    ],
+    "investigation": [
+      {
+        "type": "file",
+        "name": "android15-wifi-dual-interface.md",
+        "path": "investigation/android15-wifi-dual-interface.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/android15-wifi-dual-interface.md"
+      },
+      {
+        "type": "file",
+        "name": "rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md",
+        "path": "investigation/rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md"
+      },
+      {
+        "type": "file",
+        "name": "rk_drm_boot_logo_migration_report.md",
+        "path": "investigation/rk_drm_boot_logo_migration_report.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk_drm_boot_logo_migration_report.md"
+      }
+    ],
+    "code": [
+      {
+        "type": "subdir",
+        "name": "examples",
+        "files": [
+          {
+            "name": "Makefile",
+            "path": "code/examples/Makefile",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/Makefile"
+          },
+          {
+            "name": "README.md",
+            "path": "code/examples/README.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/README.md"
+          },
+          {
+            "name": "completion_example.c",
+            "path": "code/examples/completion_example.c",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/completion_example.c"
+          },
+          {
+            "name": "mutex_example.c",
+            "path": "code/examples/mutex_example.c",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/mutex_example.c"
+          },
+          {
+            "name": "spinlock_example.c",
+            "path": "code/examples/spinlock_example.c",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/spinlock_example.c"
+          }
+        ]
+      }
+    ]
+  }
+}

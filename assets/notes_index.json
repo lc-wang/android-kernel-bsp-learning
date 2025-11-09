@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-08T13:53:25.129Z",
+  "generated_at": "2025-11-09T05:52:27.419Z",
   "index": {
     "notes": [
       {
@@ -59,6 +59,11 @@
             "name": "interrupts.md",
             "path": "notes/kernel/interrupts.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/interrupts.md"
+          },
+          {
+            "name": "memory-management.md",
+            "path": "notes/kernel/memory-management.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/memory-management.md"
           },
           {
             "name": "power-management.md",

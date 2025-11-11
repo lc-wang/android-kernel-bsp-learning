@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-09T05:52:27.419Z",
+  "generated_at": "2025-11-11T02:18:53.400Z",
   "index": {
     "notes": [
       {
@@ -89,6 +89,12 @@
         "name": "android15-wifi-dual-interface.md",
         "path": "investigation/android15-wifi-dual-interface.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/android15-wifi-dual-interface.md"
+      },
+      {
+        "type": "file",
+        "name": "kakip-sdcard-flashing-analysis.md",
+        "path": "investigation/kakip-sdcard-flashing-analysis.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/kakip-sdcard-flashing-analysis.md"
       },
       {
         "type": "file",

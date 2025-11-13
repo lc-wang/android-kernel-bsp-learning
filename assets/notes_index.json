@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-11T03:10:21.341Z",
+  "generated_at": "2025-11-13T03:32:30.735Z",
   "index": {
     "notes": [
       {
@@ -95,6 +95,12 @@
         "name": "kakip-sdcard-flashing-analysis.md",
         "path": "investigation/kakip-sdcard-flashing-analysis.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/kakip-sdcard-flashing-analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "mipi_display_rotation_analysis.md",
+        "path": "investigation/mipi_display_rotation_analysis.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/mipi_display_rotation_analysis.md"
       },
       {
         "type": "file",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-14T05:53:46.627Z",
+  "generated_at": "2025-11-15T12:15:41.371Z",
   "index": {
     "notes": [
       {
@@ -50,6 +50,11 @@
       {
         "subfolder": "kernel",
         "files": [
+          {
+            "name": "debug-tools.md",
+            "path": "notes/kernel/debug-tools.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/debug-tools.md"
+          },
           {
             "name": "driver-basic.md",
             "path": "notes/kernel/driver-basic.md",

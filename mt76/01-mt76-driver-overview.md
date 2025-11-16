@@ -43,3 +43,11 @@ mac80211 則負責：
 -   AP beacon 設定
 -   Channel switch
 -   AMPDU/AMSDU
+
+## 參考來源
+
+1.  mt76 Driver — Linux Wireless Documentation: “mediatek — mac80211 wireless driver for MediaTek MT7xxx series…”。[Linux Wireless Documentation](https://wireless.docs.kernel.org/en/latest/en/users/drivers/mediatek.html?utm_source=chatgpt.com)
+2.  mt76 Repository — OpenWrt GitHub: “mac80211 driver for MediaTek MT76x0e, MT76x2e, MT7615, …” [GitHub](https://github.com/openwrt/mt76?utm_source=chatgpt.com)
+3.  Kernel config info: `CONFIG_MT76_CORE` on kernelconfig.io — shows inclusion since Linux 3.10 and file path. [KernelConfig](https://www.kernelconfig.io/config_mt76_core?utm_source=chatgpt.com)
+4.  Phoronix article: “Many MediaTek Wireless Driver Improvements On Deck For Linux 5.8” — 提及 mt76 新裝置支援、開發動態。 [Phoronix](https://www.phoronix.com/news/MediaTek-Wireless-Linux-5.8?utm_source=chatgpt.com)
+5.  Reddit 討論：使用者 “mt76 is the modern driver for most Mediatek chips … kernel part of the drivers is FOSS.” [Reddit](https://www.reddit.com/r/openwrt/comments/171pw7d/understanding_open_source_wifi_drivers_and_other/?utm_source=chatgpt.com)

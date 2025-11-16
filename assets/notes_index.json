@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-16T13:35:41.935Z",
+  "generated_at": "2025-11-16T13:40:46.231Z",
   "index": {
     "notes": [
       {
@@ -124,39 +124,6 @@
         "name": "rzt2h_esd_boot_image_report.md",
         "path": "investigation/rzt2h_esd_boot_image_report.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h_esd_boot_image_report.md"
-      }
-    ],
-    "code": [
-      {
-        "type": "subdir",
-        "name": "examples",
-        "files": [
-          {
-            "name": "Makefile",
-            "path": "code/examples/Makefile",
-            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/Makefile"
-          },
-          {
-            "name": "README.md",
-            "path": "code/examples/README.md",
-            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/README.md"
-          },
-          {
-            "name": "completion_example.c",
-            "path": "code/examples/completion_example.c",
-            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/completion_example.c"
-          },
-          {
-            "name": "mutex_example.c",
-            "path": "code/examples/mutex_example.c",
-            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/mutex_example.c"
-          },
-          {
-            "name": "spinlock_example.c",
-            "path": "code/examples/spinlock_example.c",
-            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/code/examples/spinlock_example.c"
-          }
-        ]
       }
     ]
   }

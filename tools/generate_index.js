@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const TOP_DIRS = ['notes','investigation','code','examples'];
+const TOP_DIRS = ['notes','investigation'];
 const OUT_DIR = 'assets';
 const OUT_FILE = path.join(OUT_DIR, 'notes_index.json');
 

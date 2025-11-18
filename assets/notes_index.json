@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-18T08:15:35.162Z",
+  "generated_at": "2025-11-18T09:33:28.504Z",
   "index": {
     "notes": [
       {
@@ -123,6 +123,12 @@
         "name": "rk_drm_boot_logo_migration_report.md",
         "path": "investigation/rk_drm_boot_logo_migration_report.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk_drm_boot_logo_migration_report.md"
+      },
+      {
+        "type": "file",
+        "name": "rzt2h-cr52-remoteproc-firmware-compatibility.md",
+        "path": "investigation/rzt2h-cr52-remoteproc-firmware-compatibility.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h-cr52-remoteproc-firmware-compatibility.md"
       },
       {
         "type": "file",

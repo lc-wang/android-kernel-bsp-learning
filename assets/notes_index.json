@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-18T09:33:28.504Z",
+  "generated_at": "2025-11-18T09:38:51.375Z",
   "index": {
     "notes": [
       {
@@ -19,6 +19,11 @@
             "name": "hidl-aidl.md",
             "path": "notes/android/hidl-aidl.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/hidl-aidl.md"
+          },
+          {
+            "name": "input-system.md",
+            "path": "notes/android/input-system.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/input-system.md"
           },
           {
             "name": "system-services.md",

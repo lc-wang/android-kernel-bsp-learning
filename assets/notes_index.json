@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-24T08:15:16.940Z",
+  "generated_at": "2025-11-24T08:41:01.656Z",
   "index": {
     "notes": [
       {
@@ -14,6 +14,11 @@
             "name": "boot-flow.md",
             "path": "notes/android/boot-flow.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/boot-flow.md"
+          },
+          {
+            "name": "boot-optimizations.md",
+            "path": "notes/android/boot-optimizations.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/boot-optimizations.md"
           },
           {
             "name": "graphics-display.md",

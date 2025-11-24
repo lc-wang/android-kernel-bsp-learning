@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-22T13:20:06.820Z",
+  "generated_at": "2025-11-24T08:15:16.940Z",
   "index": {
     "notes": [
       {
@@ -29,6 +29,11 @@
             "name": "input-system.md",
             "path": "notes/android/input-system.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/input-system.md"
+          },
+          {
+            "name": "media-stack.md",
+            "path": "notes/android/media-stack.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/media-stack.md"
           },
           {
             "name": "system-services.md",

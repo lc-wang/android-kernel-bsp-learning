@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-24T08:41:01.656Z",
+  "generated_at": "2025-11-25T07:17:28.115Z",
   "index": {
     "notes": [
       {
@@ -155,6 +155,12 @@
         "name": "rzt2h-cr52-remoteproc-openamp-analysis.md",
         "path": "investigation/rzt2h-cr52-remoteproc-openamp-analysis.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h-cr52-remoteproc-openamp-analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "rzt2h_cr52_ros2_control.md",
+        "path": "investigation/rzt2h_cr52_ros2_control.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h_cr52_ros2_control.md"
       },
       {
         "type": "file",

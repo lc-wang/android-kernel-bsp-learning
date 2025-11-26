@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-25T09:52:00.246Z",
+  "generated_at": "2025-11-26T09:50:55.752Z",
   "index": {
     "notes": [
       {
@@ -59,6 +59,11 @@
             "name": "device-tree.md",
             "path": "notes/bsp/device-tree.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/device-tree.md"
+          },
+          {
+            "name": "storage-filesystem.md",
+            "path": "notes/bsp/storage-filesystem.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/storage-filesystem.md"
           },
           {
             "name": "suspend-resume.md",

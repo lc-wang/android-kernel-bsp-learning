@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-26T10:23:26.711Z",
+  "generated_at": "2025-11-27T06:49:54.456Z",
   "index": {
     "notes": [
       {
@@ -74,6 +74,11 @@
             "name": "uboot.md",
             "path": "notes/bsp/uboot.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/uboot.md"
+          },
+          {
+            "name": "ubuntu-debian.md",
+            "path": "notes/bsp/ubuntu-debian.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/ubuntu-debian.md"
           },
           {
             "name": "yocto.md",

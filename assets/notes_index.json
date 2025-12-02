@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-27T06:49:54.456Z",
+  "generated_at": "2025-12-02T06:43:18.953Z",
   "index": {
     "notes": [
       {
@@ -134,6 +134,12 @@
         "name": "android15-wifi-dual-interface.md",
         "path": "investigation/android15-wifi-dual-interface.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/android15-wifi-dual-interface.md"
+      },
+      {
+        "type": "file",
+        "name": "imx95-yocto-bitbake-timeout-io-stall-analysis.md",
+        "path": "investigation/imx95-yocto-bitbake-timeout-io-stall-analysis.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/imx95-yocto-bitbake-timeout-io-stall-analysis.md"
       },
       {
         "type": "file",

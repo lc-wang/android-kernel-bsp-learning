@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-02T06:43:18.953Z",
+  "generated_at": "2025-12-03T06:51:56.613Z",
   "index": {
     "notes": [
       {
@@ -194,6 +194,12 @@
         "name": "rzt2h_esd_boot_image_report.md",
         "path": "investigation/rzt2h_esd_boot_image_report.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h_esd_boot_image_report.md"
+      },
+      {
+        "type": "file",
+        "name": "yocto-meta-test-framework-integration.md",
+        "path": "investigation/yocto-meta-test-framework-integration.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/yocto-meta-test-framework-integration.md"
       }
     ]
   }

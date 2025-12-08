@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-04T10:36:33.885Z",
+  "generated_at": "2025-12-08T10:08:24.690Z",
   "index": {
     "notes": [
       {
@@ -164,6 +164,12 @@
         "name": "rk_drm_boot_logo_migration_report.md",
         "path": "investigation/rk_drm_boot_logo_migration_report.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk_drm_boot_logo_migration_report.md"
+      },
+      {
+        "type": "file",
+        "name": "rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md",
+        "path": "investigation/rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md"
       },
       {
         "type": "file",

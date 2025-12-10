@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-09T08:53:42.365Z",
+  "generated_at": "2025-12-10T09:15:38.111Z",
   "index": {
     "notes": [
       {
@@ -119,11 +119,6 @@
             "name": "synchronization.md",
             "path": "notes/kernel/synchronization.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/synchronization.md"
-          },
-          {
-            "name": "wifi-stack.md",
-            "path": "notes/kernel/wifi-stack.md",
-            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/wifi-stack.md"
           }
         ]
       },
@@ -136,9 +131,39 @@
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/drm-kms.md"
           },
           {
+            "name": "io-subsystem.md",
+            "path": "notes/linux/io-subsystem.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/io-subsystem.md"
+          },
+          {
+            "name": "irq-subsystem.md",
+            "path": "notes/linux/irq-subsystem.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/irq-subsystem.md"
+          },
+          {
+            "name": "locking.md",
+            "path": "notes/linux/locking.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/locking.md"
+          },
+          {
+            "name": "memory-model.md",
+            "path": "notes/linux/memory-model.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/memory-model.md"
+          },
+          {
+            "name": "networking-stack.md",
+            "path": "notes/linux/networking-stack.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/networking-stack.md"
+          },
+          {
             "name": "rpmsg-remoteproc.md",
             "path": "notes/linux/rpmsg-remoteproc.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/rpmsg-remoteproc.md"
+          },
+          {
+            "name": "scheduler.md",
+            "path": "notes/linux/scheduler.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/scheduler.md"
           },
           {
             "name": "thermal-cpufreq.md",
@@ -149,6 +174,16 @@
             "name": "vfs-filesystem.md",
             "path": "notes/linux/vfs-filesystem.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/vfs-filesystem.md"
+          },
+          {
+            "name": "wifi-stack.md",
+            "path": "notes/linux/wifi-stack.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/wifi-stack.md"
+          },
+          {
+            "name": "workqueue-tasklet.md",
+            "path": "notes/linux/workqueue-tasklet.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/workqueue-tasklet.md"
           }
         ]
       }

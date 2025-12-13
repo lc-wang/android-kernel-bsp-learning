@@ -1,4 +1,5 @@
 
+
 # Android Input System 解析（InputReader / InputDispatcher / IMS / WMS）
 
 本章說明 Android 的輸入系統架構，包括觸控、鍵盤、滑鼠等所有輸入事件的流程。  
@@ -213,6 +214,120 @@ InputDispatcher → reportANR()
 | event 掉事件 | InputReader 過載 | 調低 event 時序或排查 drop log |
 | ANR | App 主執行緒卡住 | 分析 main thread Looper stack |
 
+## 11. Input threads 與 scheduler / cgroup / uclamp 的實際關係
+
+> 本節銜接 `android/cgroup-ucolor.md` 與 `android/graphics-display.md`，
+> 說明 **input latency 為什麼常常不是 input driver 的問題，而是 scheduler 的問題**。
+
+在 Android 中，一次「使用者觸控 → 畫面更新」至少跨越三個 subsystem：
+- Input
+- Scheduler
+- Graphics
+
+如果只檢查 input pipeline，很容易誤判問題來源。
+
+---
+
+### 11.1 Input pipeline 中的關鍵 threads
+
+實際影響 input latency 的 threads 包含：
+
+| Thread | 所屬 process | 角色 |
+|---|---|---|
+| InputReaderThread | system_server (native) | 解析 raw input event |
+| InputDispatcherThread | system_server (native) | 決定目標 window、分派事件 |
+| App UI thread | App process | 接收事件、觸發 draw |
+| SurfaceFlinger thread | surfaceflinger | 後續 frame 合成 |
+
+這些 threads **跨越不同 process**，但在「互動情境」中，
+它們都屬於 **latency critical path**。
+
+---
+
+### 11.2 Input thread 的 cgroup 與 uclamp 定位
+
+在正常情況下：
+
+- InputReader / InputDispatcher threads
+- system_server 內部關鍵 input 相關 thread
+
+會被 framework 放入：
+
+```text
+/sys/fs/cgroup/system/ 或 foreground/
+```
+並搭配：
+
+-   較高的 `uclamp.min`
+-   避免被排程到小 core
+
+目的不是效能最大化，而是：
+
+> **確保 input event 被即時處理，不被 background workload 擠壓**
+
+### 11.3 為什麼 input lag 常被誤判為 driver 問題
+
+常見誤判情境：
+
+-   `getevent` 看起來 event 很即時   
+-   InputReader / Dispatcher log 沒異常
+-   但使用者仍感覺「點了沒反應」
+    
+
+實際原因可能是：
+| 問題描述                                   | 真正影響                         |
+|--------------------------------------------|----------------------------------|
+| InputDispatcher thread 被排到小 core       | Input dispatch 延遲，影響互動回饋 |
+| system_server 的 uclamp.min 設定過低       | Wakeup latency 偏高              |
+| Background task 佔用過多 CPU               | Input thread 被搶佔，產生卡頓     |
+👉 **這些問題在 input log 中是看不到的**
+
+----------
+
+### 11.4 Input latency 的實戰 debug 路徑
+
+#### 1️⃣ 確認 input threads 所屬 cgroup
+```sh
+ps -e -o pid,tid,comm,cgroup | grep Input
+```
+觀察：
+
+-   是否落在 `system` / `foreground`
+-   是否被錯誤放到 `background`
+
+----------
+
+#### 2️⃣ 檢查 system / foreground cgroup 的 uclamp
+```sh
+cat /sys/fs/cgroup/system/uclamp.min
+cat /sys/fs/cgroup/foreground/uclamp.min
+```
+----------
+
+#### 3️⃣ 對照 input 與 scheduler trace
+```sh
+atrace input sched gfx
+```
+比對：
+
+-   input event 到達時間  
+-   InputDispatcher 實際被排程時間
+-   App UI thread 是否及時被喚醒
+    
+
+----------
+
+### 11.5 BSP / vendor 常見踩雷點（input 專屬）
+
+1.  **system_server 被錯誤降級到 background cgroup**
+2.  **vendor scheduler patch 忽略 uclamp 設定**
+3.  **thermal policy 過早限制 big core，影響 input latency**
+    
+
+這類問題：
+-   driver 正確
+-   input pipeline 正確
+-   但 UX 仍然明顯變差
 ---
 
 📘 **延伸閱讀**

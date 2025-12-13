@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-10T09:15:38.111Z",
+  "generated_at": "2025-12-13T13:34:40.134Z",
   "index": {
     "notes": [
       {
@@ -19,6 +19,11 @@
             "name": "boot-optimizations.md",
             "path": "notes/android/boot-optimizations.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/boot-optimizations.md"
+          },
+          {
+            "name": "cgroup-ucolor.md",
+            "path": "notes/android/cgroup-ucolor.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/cgroup-ucolor.md"
           },
           {
             "name": "graphics-display.md",

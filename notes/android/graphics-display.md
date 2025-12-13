@@ -1,4 +1,5 @@
 
+
 # Android Graphics & Display System（SurfaceFlinger / HWComposer / BufferQueue）
 
 本章解構 Android 的整體顯示架構：  
@@ -190,8 +191,106 @@ SurfaceFlinger → HWC → DRM → Panel
 | 某 layer 不更新 | buffer 未 queue / consumer 卡住 | 用 `dumpsys SurfaceFlinger` 查看 layer timeline |
 
 ---
+## 11. Graphics threads 與 scheduler / cgroup / uclamp 的實際關係
 
-## 11. 小結
+### 11.1 Graphics pipeline 中的關鍵 threads
+
+在一個典型互動畫面路徑中，真正影響 frame deadline 的 threads 包含：
+
+| Thread | 所屬 process | 角色 |
+|---|---|---|
+| App UI thread | App process | 接收 input、觸發 draw |
+| RenderThread | App process (HWUI) | GPU draw commands |
+| SurfaceFlinger main thread | surfaceflinger | layer 收集與合成調度 |
+| HWC callback thread | surfaceflinger / hwc | vsync / present |
+
+這些 threads **不是對等的**，但它們通常：
+- 位於 **top-app / foreground cgroup**
+- 共享相似的 uclamp policy
+
+---
+
+### 11.2 cgroup 與 uclamp 對 graphics threads 的影響
+
+以「前景互動 App」為例：
+
+- App UI thread / RenderThread
+- SurfaceFlinger thread
+
+通常會被 framework 放入：
+
+```text
+/sys/fs/cgroup/top-app/
+```
+
+並套用：
+
+-   較高的 `uclamp.min`
+-   允許使用 big core
+    
+
+效果是：
+
+-   thread 剛 wakeup 時，即使 util_avg 很低
+-   scheduler 仍會選擇高效能 CPU
+-   確保 frame 能在 vsync deadline 前完成
+    
+
+👉 這是 Android 能避免「首幀慢、動畫卡」的關鍵。
+
+----------
+
+### 11.3 為什麼 graphics pipeline 正確，畫面仍然會卡
+
+常見情境：
+
+-   BufferQueue 正常流動
+-   HWC composition 正確
+-   DRM atomic commit 成功
+    
+
+但仍有 jank。
+
+**根本原因往往是 scheduler 層級問題**：
+
+| 問題描述                               | 實際影響                                   |
+|----------------------------------------|--------------------------------------------|
+| Graphics thread 被放入 background cgroup | Scheduler 偏好小 core，導致效能不足         |
+| uclamp.min 設定過低                    | Wakeup latency 增加，互動延遲明顯           |
+| Thermal throttle 啟動                  | CPU 頻率受限，uclamp 設定無法有效發揮       |
+
+
+這類問題 單看 graphics log 是看不出來的。
+
+
+### 11.4 實戰 Debug：Graphics jank 從哪裡查
+
+#### 1️⃣ 確認 thread 所屬 cgroup
+```sh
+ps -e -o pid,tid,comm,cgroup | grep surfaceflinger
+```
+#### 2️⃣ 檢查 uclamp 設定
+```sh
+cat /sys/fs/cgroup/top-app/uclamp.min cat /sys/fs/cgroup/top-app/uclamp.max
+```
+#### 3️⃣ 對照 scheduler trace 與 vsync
+
+-   `atrace sched gfx hwcomposer`   
+-   比對：
+    -   thread wakeup
+    -   實際 run time
+    -   是否錯過 vsync
+        
+----------
+
+### 11.5 BSP / vendor 常見踩雷點（graphics 專屬）
+
+1.  **vendor kernel scheduler patch 與 uclamp 衝突** 
+2.  **SurfaceFlinger thread priority 被改動**
+3.  **thermal policy 過度保守，big core 無法拉頻**
+
+---
+## 12. 小結
 
 Android 顯示管線是：
 1. **App 渲染 → BufferQueue**
@@ -199,4 +298,3 @@ Android 顯示管線是：
 3. **HWC 決策 overlay / GPU composition**
 4. **RenderEngine GPU 合成（必要時）**
 5. **DRM/KMS 最終輸出到 Panel**
-

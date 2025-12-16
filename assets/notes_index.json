@@ -1,10 +1,15 @@
 {
-  "generated_at": "2025-12-13T13:53:58.807Z",
+  "generated_at": "2025-12-16T06:18:55.650Z",
   "index": {
     "notes": [
       {
         "subfolder": "android",
         "files": [
+          {
+            "name": "activity-manager.md",
+            "path": "notes/android/activity-manager.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/activity-manager.md"
+          },
           {
             "name": "binder-ipc.md",
             "path": "notes/android/binder-ipc.md",
@@ -49,6 +54,11 @@
             "name": "system-services.md",
             "path": "notes/android/system-services.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/system-services.md"
+          },
+          {
+            "name": "window-manager.md",
+            "path": "notes/android/window-manager.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/window-manager.md"
           }
         ]
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-16T06:18:55.650Z",
+  "generated_at": "2025-12-17T06:32:25.833Z",
   "index": {
     "notes": [
       {
@@ -71,9 +71,24 @@
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/boot-sequence.md"
           },
           {
+            "name": "clock-reset-power.md",
+            "path": "notes/bsp/clock-reset-power.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/clock-reset-power.md"
+          },
+          {
             "name": "device-tree.md",
             "path": "notes/bsp/device-tree.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/device-tree.md"
+          },
+          {
+            "name": "i2c-interface.md",
+            "path": "notes/bsp/i2c-interface.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/i2c-interface.md"
+          },
+          {
+            "name": "i2s-audio-interface.md",
+            "path": "notes/bsp/i2s-audio-interface.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/i2s-audio-interface.md"
           },
           {
             "name": "storage-filesystem.md",
@@ -140,6 +155,16 @@
       {
         "subfolder": "linux",
         "files": [
+          {
+            "name": "bus-subsystems.md",
+            "path": "notes/linux/bus-subsystems.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/bus-subsystems.md"
+          },
+          {
+            "name": "device-driver-model.md",
+            "path": "notes/linux/device-driver-model.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/device-driver-model.md"
+          },
           {
             "name": "drm-kms.md",
             "path": "notes/linux/drm-kms.md",

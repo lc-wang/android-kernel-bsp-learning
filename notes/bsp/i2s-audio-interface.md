@@ -1,14 +1,13 @@
-
 # BSP I2S / Audio Interface（音訊介面整合實務）
 
 > 本章定位：
-> 
+>
 > -   站在 **BSP / SoC Bring-up Engineer** 視角，理解 I2S / Audio 介面為什麼特別容易出問題
->     
+>
 > -   不講 I2S waveform 或 codec datasheet，而是聚焦 **clock、PLL、同步關係與系統整合**
->     
+>
 > -   能實際用於 debug：沒聲音、爆音、聲音變慢/變快、suspend/resume 後失效
->     
+>
 
 ----------
 
@@ -19,7 +18,7 @@ Audio 在 BSP 世界有幾個致命特性：
 -   對 **clock 精準度與穩定度極度敏感**
 -   問題常不是「完全不能用」，而是「聽起來不對」
 -   很多錯誤只在 runtime 或 suspend/resume 後出現
-    
+
 👉 **Audio 問題通常不是 codec driver bug，而是 clock / 同步關係錯誤。**
 
 ----------
@@ -33,8 +32,8 @@ I2S 傳輸包含：
 -   BCLK（bit clock）
 -   LRCLK / WS（frame clock）
 -   MCLK（master clock，若有）
-    
-資料本身很少出錯，  
+
+資料本身很少出錯，
 真正決定聲音品質的是：
 
 -   clock source
@@ -53,12 +52,12 @@ I2S 傳輸包含：
 
 -   SoC 為 master，codec 為 slave
 -   Codec 為 master，SoC 為 slave
-    
+
 如果角色搞錯：
 
 -   聲音可能能播
 -   但會有 pitch error、drop、爆音
-    
+
 ----------
 
 ## 3. I2S Controller 與 Audio Codec 的分工
@@ -106,8 +105,8 @@ I2S 傳輸包含：
 
 常見原因：
 -   PLL 在 suspend 被關閉
--   resume 未重新鎖定 clock  
--   codec 未重新初始化  
+-   resume 未重新鎖定 clock
+-   codec 未重新初始化
 
 結果：
 -   播放成功但沒聲音
@@ -155,3 +154,84 @@ Audio 問題常見誤判：
 | 沒聲音   | Codec driver    | Clock 未 lock     |
 | 爆音     | Buffer 問題     | PLL 不穩          |
 | 聲音快慢 | App 問題        | Rate mismatch     |
+----------
+## 9. Audio Debug Toolbox
+
+### 9.1 確認音效卡與 DAI 是否存在
+```bash
+aplay -l
+arecord -l
+```
+觀察重點：
+-   是否看到預期的 sound card    
+-   card / device 編號是否穩定
+    
+若這一步就不存在：
+-   問題通常在 **DAI link / DTS / driver probe**
+    
+----------
+
+### 9.2 確認 Mixer / Path 是否正確
+```bash
+amixer
+```
+或在嵌入式系統常見：
+```bash
+tinymix
+tinymix controls
+tinymix <id> <value>
+```
+用途：
+-   確認 codec path 是否打開
+-   排除「有資料但被 mute」的情況
+----------
+
+### 9.3 固定條件播放測試
+```bash
+aplay -D hw:0,0 test.wav
+```
+建議使用：
+-   單一 sample rate  
+-   單一 channel
+
+若此情況仍異常：
+-   問題多半在 **clock / PLL / DAI format**
+
+----------
+
+### 9.4 Clock / PLL 狀態檢查
+```bash
+cat /sys/kernel/debug/clk/clk_summary
+```
+觀察重點：
+-   Audio 相關 clock 是否 enable 
+-   rate 是否符合 44.1k / 48k family
+    
+👉 Audio 問題第一時間一定要看這裡。
+
+----------
+
+### 9.5 Suspend / Resume Audio 檢查流程
+```bash
+aplay test.wav
+echo mem > /sys/power/state
+aplay test.wav
+```
+若 resume 後：
+-   沒聲音 / 雜音 / 只播一下
+
+通常代表：
+-   PLL 未重新 lock
+-   codec 未重新初始化
+----------
+
+### 9.6 快速問題定位表
+
+| 現象               | 最可能問題層級        |
+|--------------------|-----------------------|
+| 看不到 Sound Card  | DAI / DTS             |
+| 有 Card 無聲音     | Mixer / Path          |
+| 聲音快慢不對       | Clock rate 設定       |
+| 爆音 / 雜音        | PLL 不穩              |
+| Resume 後壞掉      | Clock / Codec reset   |
+

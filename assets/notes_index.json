@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-17T06:32:25.833Z",
+  "generated_at": "2025-12-17T08:55:13.863Z",
   "index": {
     "notes": [
       {
@@ -252,6 +252,12 @@
         "name": "mipi_display_rotation_analysis.md",
         "path": "investigation/mipi_display_rotation_analysis.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/mipi_display_rotation_analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "rk3588-es8388-mic-routing-analysis.md",
+        "path": "investigation/rk3588-es8388-mic-routing-analysis.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588-es8388-mic-routing-analysis.md"
       },
       {
         "type": "file",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-17T08:55:13.863Z",
+  "generated_at": "2025-12-19T03:07:15.059Z",
   "index": {
     "notes": [
       {
@@ -71,6 +71,16 @@
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/boot-sequence.md"
           },
           {
+            "name": "bootloader-handoff.md",
+            "path": "notes/bsp/bootloader-handoff.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/bootloader-handoff.md"
+          },
+          {
+            "name": "bring-up-debug-playbook.md",
+            "path": "notes/bsp/bring-up-debug-playbook.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/bring-up-debug-playbook.md"
+          },
+          {
             "name": "clock-reset-power.md",
             "path": "notes/bsp/clock-reset-power.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/clock-reset-power.md"
@@ -81,6 +91,11 @@
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/device-tree.md"
           },
           {
+            "name": "firmware-loading.md",
+            "path": "notes/bsp/firmware-loading.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/firmware-loading.md"
+          },
+          {
             "name": "i2c-interface.md",
             "path": "notes/bsp/i2c-interface.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/i2c-interface.md"
@@ -89,6 +104,16 @@
             "name": "i2s-audio-interface.md",
             "path": "notes/bsp/i2s-audio-interface.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/i2s-audio-interface.md"
+          },
+          {
+            "name": "pinctrl-gpio.md",
+            "path": "notes/bsp/pinctrl-gpio.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/pinctrl-gpio.md"
+          },
+          {
+            "name": "power-domains.md",
+            "path": "notes/bsp/power-domains.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/power-domains.md"
           },
           {
             "name": "storage-filesystem.md",
@@ -258,6 +283,12 @@
         "name": "rk3588-es8388-mic-routing-analysis.md",
         "path": "investigation/rk3588-es8388-mic-routing-analysis.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588-es8388-mic-routing-analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md",
+        "path": "investigation/rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md"
       },
       {
         "type": "file",

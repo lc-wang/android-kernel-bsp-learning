@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-19T03:07:15.059Z",
+  "generated_at": "2025-12-19T10:16:52.263Z",
   "index": {
     "notes": [
       {
@@ -283,6 +283,12 @@
         "name": "rk3588-es8388-mic-routing-analysis.md",
         "path": "investigation/rk3588-es8388-mic-routing-analysis.md",
         "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588-es8388-mic-routing-analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "rk3588-rk806-poweroff-callflow-and-debug-analysis.md",
+        "path": "investigation/rk3588-rk806-poweroff-callflow-and-debug-analysis.md",
+        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588-rk806-poweroff-callflow-and-debug-analysis.md"
       },
       {
         "type": "file",

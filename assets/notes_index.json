@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-20T14:43:40.676Z",
+  "generated_at": "2025-12-20T14:46:17.115Z",
   "index": {
     "notes": [
       {
@@ -249,6 +249,111 @@
             "name": "workqueue-tasklet.md",
             "path": "notes/linux/workqueue-tasklet.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/workqueue-tasklet.md"
+          }
+        ]
+      }
+    ],
+    "cases-study": [
+      {
+        "type": "subdir",
+        "name": "nxp",
+        "files": [
+          {
+            "name": "imx95-yocto-bitbake-timeout-io-stall-analysis.md",
+            "path": "cases-study/nxp/imx95-yocto-bitbake-timeout-io-stall-analysis.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/nxp/imx95-yocto-bitbake-timeout-io-stall-analysis.md"
+          },
+          {
+            "name": "yocto-meta-test-framework-integration.md",
+            "path": "cases-study/nxp/yocto-meta-test-framework-integration.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/nxp/yocto-meta-test-framework-integration.md"
+          }
+        ]
+      },
+      {
+        "type": "subdir",
+        "name": "renesas",
+        "files": [
+          {
+            "name": "kakip-sdcard-flashing-analysis.md",
+            "path": "cases-study/renesas/kakip-sdcard-flashing-analysis.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/kakip-sdcard-flashing-analysis.md"
+          },
+          {
+            "name": "rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md",
+            "path": "cases-study/renesas/rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md"
+          },
+          {
+            "name": "rzt2h-cr52-remoteproc-firmware-compatibility.md",
+            "path": "cases-study/renesas/rzt2h-cr52-remoteproc-firmware-compatibility.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h-cr52-remoteproc-firmware-compatibility.md"
+          },
+          {
+            "name": "rzt2h-cr52-remoteproc-openamp-analysis.md",
+            "path": "cases-study/renesas/rzt2h-cr52-remoteproc-openamp-analysis.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h-cr52-remoteproc-openamp-analysis.md"
+          },
+          {
+            "name": "rzt2h-sdhi-uboot-sdcard-init-debug-report.md",
+            "path": "cases-study/renesas/rzt2h-sdhi-uboot-sdcard-init-debug-report.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h-sdhi-uboot-sdcard-init-debug-report.md"
+          },
+          {
+            "name": "rzt2h_cr52_remoteproc_firmware_helloworld.md",
+            "path": "cases-study/renesas/rzt2h_cr52_remoteproc_firmware_helloworld.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h_cr52_remoteproc_firmware_helloworld.md"
+          },
+          {
+            "name": "rzt2h_cr52_ros2_control.md",
+            "path": "cases-study/renesas/rzt2h_cr52_ros2_control.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h_cr52_ros2_control.md"
+          },
+          {
+            "name": "rzt2h_esd_boot_image_report.md",
+            "path": "cases-study/renesas/rzt2h_esd_boot_image_report.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h_esd_boot_image_report.md"
+          }
+        ]
+      },
+      {
+        "type": "subdir",
+        "name": "rockchip",
+        "files": [
+          {
+            "name": "android15-wifi-dual-interface.md",
+            "path": "cases-study/rockchip/android15-wifi-dual-interface.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/android15-wifi-dual-interface.md"
+          },
+          {
+            "name": "mipi_display_rotation_analysis.md",
+            "path": "cases-study/rockchip/mipi_display_rotation_analysis.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/mipi_display_rotation_analysis.md"
+          },
+          {
+            "name": "rk3588-es8388-mic-routing-analysis.md",
+            "path": "cases-study/rockchip/rk3588-es8388-mic-routing-analysis.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/rk3588-es8388-mic-routing-analysis.md"
+          },
+          {
+            "name": "rk3588-rk806-poweroff-callflow-and-debug-analysis.md",
+            "path": "cases-study/rockchip/rk3588-rk806-poweroff-callflow-and-debug-analysis.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/rk3588-rk806-poweroff-callflow-and-debug-analysis.md"
+          },
+          {
+            "name": "rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md",
+            "path": "cases-study/rockchip/rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md"
+          },
+          {
+            "name": "rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md",
+            "path": "cases-study/rockchip/rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md"
+          },
+          {
+            "name": "rk_drm_boot_logo_migration_report.md",
+            "path": "cases-study/rockchip/rk_drm_boot_logo_migration_report.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/rk_drm_boot_logo_migration_report.md"
           }
         ]
       }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-19T10:16:52.263Z",
+  "generated_at": "2025-12-20T14:43:40.676Z",
   "index": {
     "notes": [
       {
@@ -251,110 +251,6 @@
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/workqueue-tasklet.md"
           }
         ]
-      }
-    ],
-    "investigation": [
-      {
-        "type": "file",
-        "name": "android15-wifi-dual-interface.md",
-        "path": "investigation/android15-wifi-dual-interface.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/android15-wifi-dual-interface.md"
-      },
-      {
-        "type": "file",
-        "name": "imx95-yocto-bitbake-timeout-io-stall-analysis.md",
-        "path": "investigation/imx95-yocto-bitbake-timeout-io-stall-analysis.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/imx95-yocto-bitbake-timeout-io-stall-analysis.md"
-      },
-      {
-        "type": "file",
-        "name": "kakip-sdcard-flashing-analysis.md",
-        "path": "investigation/kakip-sdcard-flashing-analysis.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/kakip-sdcard-flashing-analysis.md"
-      },
-      {
-        "type": "file",
-        "name": "mipi_display_rotation_analysis.md",
-        "path": "investigation/mipi_display_rotation_analysis.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/mipi_display_rotation_analysis.md"
-      },
-      {
-        "type": "file",
-        "name": "rk3588-es8388-mic-routing-analysis.md",
-        "path": "investigation/rk3588-es8388-mic-routing-analysis.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588-es8388-mic-routing-analysis.md"
-      },
-      {
-        "type": "file",
-        "name": "rk3588-rk806-poweroff-callflow-and-debug-analysis.md",
-        "path": "investigation/rk3588-rk806-poweroff-callflow-and-debug-analysis.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588-rk806-poweroff-callflow-and-debug-analysis.md"
-      },
-      {
-        "type": "file",
-        "name": "rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md",
-        "path": "investigation/rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md"
-      },
-      {
-        "type": "file",
-        "name": "rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md",
-        "path": "investigation/rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk3588_sepolicy_rknn_and_hal_denials_analysis_report.md"
-      },
-      {
-        "type": "file",
-        "name": "rk_drm_boot_logo_migration_report.md",
-        "path": "investigation/rk_drm_boot_logo_migration_report.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rk_drm_boot_logo_migration_report.md"
-      },
-      {
-        "type": "file",
-        "name": "rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md",
-        "path": "investigation/rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rz_t2h_cr52_motor_firmware_remoteproc_porting_guide.md"
-      },
-      {
-        "type": "file",
-        "name": "rzt2h-cr52-remoteproc-firmware-compatibility.md",
-        "path": "investigation/rzt2h-cr52-remoteproc-firmware-compatibility.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h-cr52-remoteproc-firmware-compatibility.md"
-      },
-      {
-        "type": "file",
-        "name": "rzt2h-cr52-remoteproc-openamp-analysis.md",
-        "path": "investigation/rzt2h-cr52-remoteproc-openamp-analysis.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h-cr52-remoteproc-openamp-analysis.md"
-      },
-      {
-        "type": "file",
-        "name": "rzt2h-sdhi-uboot-sdcard-init-debug-report.md",
-        "path": "investigation/rzt2h-sdhi-uboot-sdcard-init-debug-report.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h-sdhi-uboot-sdcard-init-debug-report.md"
-      },
-      {
-        "type": "file",
-        "name": "rzt2h_cr52_remoteproc_firmware_helloworld.md",
-        "path": "investigation/rzt2h_cr52_remoteproc_firmware_helloworld.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h_cr52_remoteproc_firmware_helloworld.md"
-      },
-      {
-        "type": "file",
-        "name": "rzt2h_cr52_ros2_control.md",
-        "path": "investigation/rzt2h_cr52_ros2_control.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h_cr52_ros2_control.md"
-      },
-      {
-        "type": "file",
-        "name": "rzt2h_esd_boot_image_report.md",
-        "path": "investigation/rzt2h_esd_boot_image_report.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/rzt2h_esd_boot_image_report.md"
-      },
-      {
-        "type": "file",
-        "name": "yocto-meta-test-framework-integration.md",
-        "path": "investigation/yocto-meta-test-framework-integration.md",
-        "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/investigation/yocto-meta-test-framework-integration.md"
       }
     ]
   }

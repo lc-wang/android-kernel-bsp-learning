@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-23T05:47:41.606Z",
+  "generated_at": "2025-12-23T06:53:56.825Z",
   "index": {
     "notes": [
       {
@@ -89,6 +89,11 @@
             "name": "clock-reset-power.md",
             "path": "notes/bsp/clock-reset-power.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/clock-reset-power.md"
+          },
+          {
+            "name": "debug-toolbox.md",
+            "path": "notes/bsp/debug-toolbox.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/debug-toolbox.md"
           },
           {
             "name": "device-tree.md",

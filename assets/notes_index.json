@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-20T14:46:17.115Z",
+  "generated_at": "2025-12-23T05:47:41.606Z",
   "index": {
     "notes": [
       {
@@ -49,6 +49,11 @@
             "name": "media-stack.md",
             "path": "notes/android/media-stack.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/media-stack.md"
+          },
+          {
+            "name": "process-runtime-model",
+            "path": "notes/android/process-runtime-model",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/process-runtime-model"
           },
           {
             "name": "system-services.md",
@@ -184,6 +189,11 @@
             "name": "bus-subsystems.md",
             "path": "notes/linux/bus-subsystems.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/bus-subsystems.md"
+          },
+          {
+            "name": "cgroup-and-resource-control.md",
+            "path": "notes/linux/cgroup-and-resource-control.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/cgroup-and-resource-control.md"
           },
           {
             "name": "device-driver-model.md",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-03T10:21:20.150Z",
+  "generated_at": "2026-01-08T07:55:51.605Z",
   "index": {
     "notes": [
       {
@@ -259,6 +259,11 @@
             "name": "thermal-cpufreq.md",
             "path": "notes/linux/thermal-cpufreq.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/thermal-cpufreq.md"
+          },
+          {
+            "name": "tracing-debug-toolchain.md",
+            "path": "notes/linux/tracing-debug-toolchain.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/tracing-debug-toolchain.md"
           },
           {
             "name": "tracing-playbook.md",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-23T02:59:07.423Z",
+  "generated_at": "2026-01-23T04:11:51.890Z",
   "index": {
     "notes": [
       {
@@ -353,6 +353,11 @@
             "name": "rzt2h-tf-a-console-switch-sci1.md",
             "path": "cases-study/renesas/rzt2h-tf-a-console-switch-sci1.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h-tf-a-console-switch-sci1.md"
+          },
+          {
+            "name": "rzt2h-uboot-console-switch-sci1.md",
+            "path": "cases-study/renesas/rzt2h-uboot-console-switch-sci1.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h-uboot-console-switch-sci1.md"
           },
           {
             "name": "rzt2h-usb-debug-console-analysis.md",

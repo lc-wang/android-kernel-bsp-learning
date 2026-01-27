@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-27T06:18:40.223Z",
+  "generated_at": "2026-01-27T08:38:49.592Z",
   "index": {
     "notes": [
       {
@@ -352,6 +352,11 @@
             "name": "rzt2h-kernel-console-sci1.md",
             "path": "cases-study/renesas/rzt2h-kernel-console-sci1.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h-kernel-console-sci1.md"
+          },
+          {
+            "name": "rzt2h-lxqt-force-fluxbox-default.md",
+            "path": "cases-study/renesas/rzt2h-lxqt-force-fluxbox-default.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/rzt2h-lxqt-force-fluxbox-default.md"
           },
           {
             "name": "rzt2h-sdhi-uboot-sdcard-init-debug-report.md",

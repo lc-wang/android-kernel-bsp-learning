@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-25T09:04:50.637Z",
+  "generated_at": "2026-02-25T09:17:52.222Z",
   "index": {
     "notes": [
       {
@@ -432,6 +432,11 @@
             "name": "rk3588-rk806-poweroff-callflow-and-debug-analysis.md",
             "path": "cases-study/rockchip/rk3588-rk806-poweroff-callflow-and-debug-analysis.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/rk3588-rk806-poweroff-callflow-and-debug-analysis.md"
+          },
+          {
+            "name": "rk3588-yocto-weston-pixpaper-integration-debug-report.md",
+            "path": "cases-study/rockchip/rk3588-yocto-weston-pixpaper-integration-debug-report.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/rockchip/rk3588-yocto-weston-pixpaper-integration-debug-report.md"
           },
           {
             "name": "rk3588_Weston_Kiosk_GStreamer_Color_Aspect_Analysis.md",

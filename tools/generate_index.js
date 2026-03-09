@@ -41,11 +41,12 @@ function buildIndex() {
     data[d] = [];
 
     // if notes -> expect subdirs (android/bsp/kernel)
-    if (d === 'notes') {
-      const subs = fs.readdirSync(dirPath).filter(s=> isDir(path.join(dirPath,s)));
+      if (d === 'notes') {
+      const subs = fs.readdirSync(dirPath).filter(s => isDir(path.join(dirPath, s)));
       subs.forEach(sub => {
         const subPath = path.join(dirPath, sub);
-        const files = fs.readdirSync(subPath).filter(f=> isFile(path.join(subPath,f)));
+
+        const files = fs.readdirSync(subPath).filter(f => isFile(path.join(subPath, f)));
         const items = files.map(f => {
           return {
             name: f,
@@ -53,9 +54,32 @@ function buildIndex() {
             raw_url: `${baseRaw}/${d}/${sub}/${f}`
           };
         });
-        data[d].push({ subfolder: sub, files: items });
+
+        const nestedDirs = fs.readdirSync(subPath).filter(s => isDir(path.join(subPath, s)));
+        const subfolders = nestedDirs.map(nested => {
+          const nestedPath = path.join(subPath, nested);
+          const nestedFiles = fs.readdirSync(nestedPath).filter(f => isFile(path.join(nestedPath, f)));
+          const nestedItems = nestedFiles.map(f => {
+            return {
+              name: f,
+              path: `${d}/${sub}/${nested}/${f}`,
+              raw_url: `${baseRaw}/${d}/${sub}/${nested}/${f}`
+            };
+          });
+
+          return {
+            subfolder: nested,
+            files: nestedItems
+          };
+        }).filter(group => group.files.length > 0);
+
+        data[d].push({
+          subfolder: sub,
+          files: items,
+          subfolders: subfolders
+        });
       });
-    } else {
+    } else {  
       // for other dirs: list files and subdirectories
       const items = fs.readdirSync(dirPath);
       items.forEach(it => {

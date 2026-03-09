@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T07:29:05.341Z",
+  "generated_at": "2026-03-09T11:17:05.583Z",
   "index": {
     "notes": [
       {
@@ -65,7 +65,8 @@
             "path": "notes/android/window-manager.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/android/window-manager.md"
           }
-        ]
+        ],
+        "subfolders": []
       },
       {
         "subfolder": "bsp",
@@ -160,11 +161,44 @@
             "path": "notes/bsp/yocto.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/bsp/yocto.md"
           }
-        ]
+        ],
+        "subfolders": []
       },
       {
         "subfolder": "firmware",
-        "files": []
+        "files": [],
+        "subfolders": [
+          {
+            "subfolder": "trusted-firmware-a",
+            "files": [
+              {
+                "name": "bl2-image-loading-flow.md",
+                "path": "notes/firmware/trusted-firmware-a/bl2-image-loading-flow.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/firmware/trusted-firmware-a/bl2-image-loading-flow.md"
+              },
+              {
+                "name": "bl31-runtime-services.md",
+                "path": "notes/firmware/trusted-firmware-a/bl31-runtime-services.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/firmware/trusted-firmware-a/bl31-runtime-services.md"
+              },
+              {
+                "name": "debug-console-architecture-and-boot-flow.md",
+                "path": "notes/firmware/trusted-firmware-a/debug-console-architecture-and-boot-flow.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/firmware/trusted-firmware-a/debug-console-architecture-and-boot-flow.md"
+              },
+              {
+                "name": "memory-layout-and-mmu.md",
+                "path": "notes/firmware/trusted-firmware-a/memory-layout-and-mmu.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/firmware/trusted-firmware-a/memory-layout-and-mmu.md"
+              },
+              {
+                "name": "psci-power-flow.md",
+                "path": "notes/firmware/trusted-firmware-a/psci-power-flow.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/firmware/trusted-firmware-a/psci-power-flow.md"
+              }
+            ]
+          }
+        ]
       },
       {
         "subfolder": "kernel",
@@ -199,7 +233,8 @@
             "path": "notes/kernel/synchronization.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/kernel/synchronization.md"
           }
-        ]
+        ],
+        "subfolders": []
       },
       {
         "subfolder": "linux",
@@ -289,11 +324,89 @@
             "path": "notes/linux/workqueue-tasklet.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/linux/workqueue-tasklet.md"
           }
-        ]
+        ],
+        "subfolders": []
       },
       {
         "subfolder": "subsystems",
-        "files": []
+        "files": [],
+        "subfolders": [
+          {
+            "subfolder": "alsa",
+            "files": [
+              {
+                "name": "alsa-core-vs-asoc.md",
+                "path": "notes/subsystems/alsa/alsa-core-vs-asoc.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/alsa/alsa-core-vs-asoc.md"
+              },
+              {
+                "name": "dai-link-and-machine-driver.md",
+                "path": "notes/subsystems/alsa/dai-link-and-machine-driver.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/alsa/dai-link-and-machine-driver.md"
+              },
+              {
+                "name": "dapm-routing.md",
+                "path": "notes/subsystems/alsa/dapm-routing.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/alsa/dapm-routing.md"
+              },
+              {
+                "name": "debug-playbook.md",
+                "path": "notes/subsystems/alsa/debug-playbook.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/alsa/debug-playbook.md"
+              },
+              {
+                "name": "i2s-codec-driver.md",
+                "path": "notes/subsystems/alsa/i2s-codec-driver.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/alsa/i2s-codec-driver.md"
+              }
+            ]
+          },
+          {
+            "subfolder": "gpio",
+            "files": [
+              {
+                "name": "debug-playbook.md",
+                "path": "notes/subsystems/gpio/debug-playbook.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/gpio/debug-playbook.md"
+              },
+              {
+                "name": "device-tree-gpio-binding.md",
+                "path": "notes/subsystems/gpio/device-tree-gpio-binding.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/gpio/device-tree-gpio-binding.md"
+              },
+              {
+                "name": "gpio-kernel-architecture.md",
+                "path": "notes/subsystems/gpio/gpio-kernel-architecture.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/gpio/gpio-kernel-architecture.md"
+              },
+              {
+                "name": "gpiolib-and-character-device.md",
+                "path": "notes/subsystems/gpio/gpiolib-and-character-device.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/gpio/gpiolib-and-character-device.md"
+              },
+              {
+                "name": "libgpiod-userspace-flow.md",
+                "path": "notes/subsystems/gpio/libgpiod-userspace-flow.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/gpio/libgpiod-userspace-flow.md"
+              }
+            ]
+          },
+          {
+            "subfolder": "multimedia",
+            "files": [
+              {
+                "name": "gstreamer-architecture.md",
+                "path": "notes/subsystems/multimedia/gstreamer-architecture.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/multimedia/gstreamer-architecture.md"
+              },
+              {
+                "name": "multimedia-stack-overview.md",
+                "path": "notes/subsystems/multimedia/multimedia-stack-overview.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/multimedia/multimedia-stack-overview.md"
+              }
+            ]
+          }
+        ]
       }
     ],
     "cases-study": [

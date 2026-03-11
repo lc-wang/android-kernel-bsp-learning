@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T11:17:05.583Z",
+  "generated_at": "2026-03-11T07:01:52.568Z",
   "index": {
     "notes": [
       {
@@ -434,6 +434,11 @@
             "name": "kakip-networkmanager-dhcp-static-ip-issue.md",
             "path": "cases-study/renesas/kakip-networkmanager-dhcp-static-ip-issue.md",
             "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/kakip-networkmanager-dhcp-static-ip-issue.md"
+          },
+          {
+            "name": "kakip-rzv2h-spi-timeout-root-cause-analysis.md",
+            "path": "cases-study/renesas/kakip-rzv2h-spi-timeout-root-cause-analysis.md",
+            "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/cases-study/renesas/kakip-rzv2h-spi-timeout-root-cause-analysis.md"
           },
           {
             "name": "kakip-sdcard-flashing-analysis.md",

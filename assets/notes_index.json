@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T09:05:52.781Z",
+  "generated_at": "2026-03-30T09:50:51.174Z",
   "index": {
     "notes": [
       {
@@ -394,6 +394,11 @@
           {
             "subfolder": "multimedia",
             "files": [
+              {
+                "name": "debug-playbook.md",
+                "path": "notes/subsystems/multimedia/debug-playbook.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/multimedia/debug-playbook.md"
+              },
               {
                 "name": "drm-waylandsink-flow.md",
                 "path": "notes/subsystems/multimedia/drm-waylandsink-flow.md",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T09:57:05.252Z",
+  "generated_at": "2026-03-30T03:11:20.747Z",
   "index": {
     "notes": [
       {
@@ -408,6 +408,11 @@
                 "name": "multimedia-stack-overview.md",
                 "path": "notes/subsystems/multimedia/multimedia-stack-overview.md",
                 "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/multimedia/multimedia-stack-overview.md"
+              },
+              {
+                "name": "v4l2src-flow.md",
+                "path": "notes/subsystems/multimedia/v4l2src-flow.md",
+                "raw_url": "https://raw.githubusercontent.com/lc-wang/android-kernel-bsp-learning/main/notes/subsystems/multimedia/v4l2src-flow.md"
               }
             ]
           }
